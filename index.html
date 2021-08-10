@@ -14,9 +14,10 @@
 <body>
     <header>
       <h1>The Code Review</h1>
-
+      <div id="box">
       <h2> Sign up for our newsletter</h2>
       <p id="latest"> Get the latest news on how your code is doing right in your inbox<hr></p>
+    </div>
     </header>
 
     <main>
@@ -97,19 +98,28 @@
                           <legend>Newsletter</legend>
                           <p>Select the newsletters you would like to receive</p>
 
-                          <input type="checkbox" id="html_news" name="html_news">
-                          <label for="html_news">HTML News</label><br>
-                          <input type="checkbox" id="css_news" name="css_news">
-                          <label for="css_news">CSS News</label><br>
-                          <input type="checkbox" id="java_news" name="java_news">
-                          <label for="css_news">CSS News</label><br>
+                          <input type="checkbox" id="html" value="html_news" name="user_news_choice">
+                          <label class="news" for="html">HTML News</label><br>
 
+                          <input type="checkbox" id="css" value="css_news" name="user_news_choice">
+                          <label class="news" for="css">CSS News</label><br>
 
+                          <input type="checkbox" id="java" value="java_news" name="user_news_choice">
+                          <label class="news" for="java">Java Script News</label> <br>
 
+                          <p>Newsletter Format</p>
+                          <input type="radio" id="html_text" value="html_text" name="user_format">
+                          <label for="html_text" class="news">HTML</label><br>
+                          <input type="radio" id="plain_text" value="plain_text" name="user_format">
+                          <label for="plain_text" class="news">Plain Text</label>
 
+                          <p>Other topics you'd like to hear about</p>
+                          <textarea name="topics"></textarea>
 
-            </form>
+                          <button tpye="sumbit">Sign Up</button>
 
+                      </form>
+                          <p id="copywrite">Copywrite The Code Review </p>
 
 
     </main>
