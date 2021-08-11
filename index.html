@@ -16,7 +16,7 @@
       <h1>The Code Review</h1>
       <div id="box">
       <h2> Sign up for our newsletter</h2>
-      <p id="latest"> Get the latest news on how your code is doing right in your inbox<hr></p>
+      <p id="latest"> Get the latest news on how your code is doing right in your inbox</p><hr>
     </div>
     </header>
 
@@ -24,7 +24,7 @@
             <!-- form goes here. -->
 
             <form>
-
+                  <fieldset>
                       <legend>Contact Information</legend>
                       <label for="name">Full Name </label>
                       <input type="text" id="name" name="user_name" placeholder="Required">
@@ -37,8 +37,8 @@
                       <label for="address2">City</label>
                       <input type="text" id="address2" name="user_address2">
                       <label for="state">State</label>
-                        <select id="state" name="state" placeholder="choose state">
-                          <option value="state">Choose State</option>
+                        <select id="state" name="user_state">
+                          <option hidden>Choose State</option>
                           <option value="AL">Alabama</option>
                         	<option value="AK">Alaska</option>
                         	<option value="AZ">Arizona</option>
@@ -91,10 +91,11 @@
                         	<option value="WI">Wisconsin</option>
                         	<option value="WY">Wyoming</option>
                         </select>
-                      <label for="zip">Zip Code </label>
-                      <input type="text" id="zip" name="user_zip">
+                      <label for="zip" >Zip Code </label>
+                      <input type="text" class="zip" id="zip" name="user_zip">
               <hr>
-
+              </fieldset>
+                      <fieldset>
                           <legend>Newsletter</legend>
                           <p>Select the newsletters you would like to receive</p>
 
@@ -116,8 +117,9 @@
                           <p>Other topics you'd like to hear about</p>
                           <textarea name="topics"></textarea>
 
-                          <button tpye="sumbit">Sign Up</button>
 
+                          <button type="submit">Sign Up</button>
+                      </fieldset>
                       </form>
                           <p id="copywrite">Copywrite The Code Review </p>
 
