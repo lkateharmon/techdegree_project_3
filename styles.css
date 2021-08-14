@@ -69,15 +69,17 @@ legend {
 }
 
 form, select {
+    margin: auto;
     font-size: 1rem;
     color: #697a8a;
     background-color: #fafafa
 }
 
+
 label {
     display: block;
     margin-top: 1.5rem;
-    font-size: 1.1rem;
+    padding-right: 10px;
 
 }
 
@@ -86,8 +88,9 @@ input, textarea, select, .state {
     border-style: none;
     border-radius: 5px;
     width: 100%;
+    line-height: 1.5em;
     margin: 5px 0;
-    padding: 8px;
+    padding: 0 20px;
     font-size: 18px;
     background-color: #f0f0f0;
     color:#697a8a;
@@ -99,6 +102,9 @@ input:focus, textarea:focus {
 
 }
 
+
+
+
 ::placeholder {
     color: #697a8a;
     text-align: right;
@@ -107,21 +113,17 @@ input:focus, textarea:focus {
 
   }
 
-  input[type="number"] {
-    max-width: 25%;
-    margin-bottom: 25px;
-  }
-
 
 label.news {
   font-weight: 300;
   display: inline;
-  padding: 20px 10px;
+  padding: 30px 20px;
 }
 input[type="radio"],
 input[type="checkbox"] {
   width: auto;
   float: left;
+
 
 }
 
@@ -181,6 +183,7 @@ label.topics {
   }
 
 
+
 @media (min-width:768px){
 
 
@@ -189,12 +192,12 @@ html {font-size: 18px;
       margin: 0 auto;
       }
 main {
-          max-width: 800px;
+          max-width: 700px;
           margin: 0 auto;
 }
 
 #box {
-      max-width: 800px;
+      max-width: 700px;
       margin: 0 auto;
 }
 
