@@ -54,7 +54,8 @@ hr {
 
   }
 
-fieldset {
+fieldset,
+input, select, textarea {
     border:none;
 
 }
@@ -67,7 +68,7 @@ legend {
 
 }
 
-form {
+form, select {
     font-size: 1rem;
     color: #697a8a;
     background-color: #fafafa
@@ -106,11 +107,10 @@ input:focus, textarea:focus {
 
   }
 
-  .zip {
+  input[type="number"] {
     max-width: 25%;
     margin-bottom: 25px;
   }
-
 
 
 label.news {
@@ -146,32 +146,79 @@ button:hover {
   cursor: pointer;
 }
 
+#zip-code {
+  max-width:25%;
+}
+
 #copywrite {
   text-align: center;
   font-size: .75em;
   font-style: italic;
 }
+label.topics {
+  font-size: 1rem;
+}
 
+.contact {
+    padding-top: 40px;
+    margin-top: -10px;
+
+}
+.newsletter-text {
+    padding-top: 10px;
+    margin-top: 0px;
+    }
+
+.preferences {
+      padding-top: 30px;
+      margin-top: 20px;
+
+  }
+
+  #newsletter {
+      font-size: 1.25em;
+      font-weight: bold;
+  }
 
 
 @media (min-width:768px){
-}
+
 
 html {font-size: 18px;
       max-width: none;
       margin: 0 auto;
       }
 main {
-          max-width: 500px;
+          max-width: 800px;
           margin: 0 auto;
 }
 
 #box {
-      max-width: 500px;
+      max-width: 800px;
       margin: 0 auto;
 }
 
-.zip {
-  max-width: 50%;
-  margin-bottom: 25px;
+.contact label {
+       flex: 20%;
+       padding-top: 5px;
+   }
+
+.contact-info {
+       display: flex;
+       flex-wrap: wrap;
+     }
+
+.contact-info input,
+.contact select {
+       flex: 80%;
+   }
+
+label[for="zip-code"] {
+   max-width: 20%;
+      }
+
+#zip-code {
+    max-width: 25%;
+    margin-right: auto;
+      }
 }
